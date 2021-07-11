@@ -19,36 +19,37 @@ public class binaryTree {
 		}
 	}
 	
+		// Insertion in Binary Tree.
+	
+		public void insert(treeNode node , int data ) {
+			if(node== null) {
+				root = new treeNode(data);
+			}
+			Queue<treeNode> q = new LinkedList<>();
+			q.add(node);
+			while(!q.isEmpty()) {
+				treeNode temp = q.poll();
+				if(temp.left == null) {
+					temp.left=new treeNode(data);
+					break;
+				}
+				else {
+					q.add(temp.left);
+				}
+				if(temp.right == null) {
+					temp.right=new treeNode(data);
+					break;
+				}
+				else {
+					q.add(temp.right);
+				}
+			}
+		}
+		
 	  // **************************************   Traversing   *********************************************************//
 	
 	
-	// Insertion in Binary Tree.
-	
-	public void insert(treeNode node , int data ) {
-		if(node== null) {
-			root = new treeNode(data);
-		}
-		Queue<treeNode> q = new LinkedList<>();
-		q.add(node);
-		while(!q.isEmpty()) {
-			treeNode temp = q.poll();
-			if(temp.left == null) {
-				temp.left=new treeNode(data);
-				break;
-			}
-			else {
-				q.add(temp.left);
-			}
-			if(temp.right == null) {
-				temp.right=new treeNode(data);
-				break;
-			}
-			else {
-				q.add(temp.right);
-			}
-		}
-	}
-	
+
 	// Pre-Order Traversal(Recursive method).
 	
 	public void preOrder(treeNode root) {
