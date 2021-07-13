@@ -1,6 +1,6 @@
 package Arrays;
 
-public class Kadanes_Max_SubArray {
+public class KadanesMax_SubArray {
     public static void main(String[] args) {
         int[] arr = {4,3,-2,6,-12,7,-1,6};
         System.out.print(Max_SubArray(arr));
