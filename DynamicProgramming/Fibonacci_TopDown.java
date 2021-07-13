@@ -7,6 +7,7 @@ public class Fibonacci_TopDown {
         System.out.print("Enter any number to get fibonacci of that number : ");
         int n = sc.nextInt();
         System.out.print(TopDown(new int[n+1],n));
+        sc.close();
         
     }
     public static int TopDown(int[] table , int number){
