@@ -8,6 +8,7 @@ public class Fibonacci_BotttomUpApproch {
         System.out.print("Enter any number to get fibonacci of that number : ");
         int n = sc.nextInt();
         System.out.print(fib(n));
+        sc.close();
         
     }
     
