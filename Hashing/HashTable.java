@@ -38,7 +38,7 @@ public class HashTable {
     // code to get the index value of key. ***************** Modular Hash Function *****************************
 
     private int getIndex(Integer key){
-        return key%numOfBuckets;
+        return key % numOfBuckets;
     }
 
     //Adding data!
